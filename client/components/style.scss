@@ -1,0 +1,23 @@
+.app-bg{
+  background-color: #ccc;
+}
+.announcement{
+  background-color: #E74C3C;
+  min-height: 36px;
+  max-height: 36px;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+  .content{
+      padding: 0 10px;
+  }
+}
+.codemirror{
+  max-width: 850px;
+}
+.white{
+  color: white;
+}

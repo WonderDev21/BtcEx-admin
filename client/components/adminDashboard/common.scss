@@ -1,0 +1,285 @@
+.users-wrapper {
+    // flex: 4;
+    padding: 2em 0.5em 0 2em;
+    .active-item {
+        font-size: 1.5em;
+        vertical-align: middle;
+    }
+    .search-box {
+        display: inline-block;
+        float: right;
+        // margin-right: 3em;
+        .inp-wrapper {
+            display: inline;
+            box-shadow: 0 0 0 0 rgba(19, 124, 189, 0), 0 0 0 0 rgba(19, 124, 189, 0), inset 0 0 0 1px rgba(16, 22, 26, 0.15), inset 0 1px 1px rgba(16, 22, 26, 0.2);
+            padding: 0.5em 0.2em 0.5em 0.5em;
+            border-radius: 1em;
+            input {
+                border: none;
+                outline: none;
+            }
+            .icon {
+                color: #5c7080;
+                font-size: 1.3em;
+                &:hover, &:active {
+                    color: #1aa3ff;    
+                }
+            }
+        }
+        select {
+            border: none;
+            outline: none;
+            font-weight: 600;
+            color: #5c7080;
+        }
+    }
+    .user-method {
+        .all-users {
+            display: flex;
+            background: #76D5D4;
+            padding: 0.5em;
+            margin-top: 2em;
+            .attribute {
+                flex: 1;
+                // text-align: center;
+                color: #fff;
+            }
+        }
+        .users-data {
+         display: flex;
+         padding: 0.5em;
+         margin-top: 1em;
+         background: #E1E8ED;
+          .attribute {
+            flex: 1;
+            color: #5E5F60;
+            font-size: 0.9em;
+            font-weight: 600;
+            // text-align: center;
+          }
+          .userid {
+              &:hover, &:active {
+                  text-decoration: underline;
+                  color: #1a75ff;
+                  cursor: pointer;
+              }
+          } 
+        }
+        .flex-col-rev{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .edit-icon {
+            position: absolute;
+            right: 19px;
+            top: 5px;
+            color: #fff;
+            background: #77828B;
+        }
+        .transa-form {
+            display: inline;
+            .form {
+            margin: 2em;
+            color: #000;
+            .data-row {
+                display: flex;
+                flex-direction: column;
+                .input-container {
+                    display: flex;
+                    // flex-direction: column;
+                    margin-bottom: 2.5em;
+                    span {
+                        color: #20222D;
+                        // margin-bottom: 0.15em;
+                        flex: 1;
+                        font-weight: 600;
+                    }
+                    span:nth-child(2) {
+                        flex: 2;
+                        font-weight: normal;
+                    }
+                    input {
+                        flex: 2;
+                        outline: none;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        border-bottom: 1px solid rgba(0,0,0,0.15);
+                        height: 1.5em;
+                        width: 100%;
+                        &:focus {
+                            border-bottom: 2px solid #20222D;
+                        }
+                    }
+                    select {
+                        margin-left: 1em;
+                    }
+                }
+                .next-btn {  // form 1
+                    margin-top: 1em;
+                    padding: 0.5em;
+                    border-radius: 0.2em;
+                    border: none;
+                    background: #20222D;
+                    color: #fff;
+                    width: 20%;
+                    align-self: flex-end;
+                    &:hover, &:focus, &:active {
+                    opacity: 0.8;
+                    }
+                }
+            }
+            }
+            .edit-icon {
+                display: inline;
+                position: absolute;
+                right: 19px;
+                top: 5px;
+                color: #fff;
+                background: #77828B;
+            }
+        }
+        .doc {
+            padding: 1em 2em;
+            position: relative;
+            border: 1px solid #BFCCD6;
+            b {
+                font-size: 1.3em;
+                display: block;
+                margin-bottom: 0.7em;
+                color: #4183C4;
+            }
+            .body {
+                margin-bottom: 3em;
+                .part1 {
+                    display: flex;
+                    width: 80%;
+                    margin-bottom: 2em;
+                    .left, .right {
+                        flex: 1;
+                        display: flex;
+                        .keys { 
+                            margin-right: 1em;
+                            font-weight: bold;
+                            .item {
+                                margin-bottom: 0.5em;
+                            }
+                        }
+                        .values {
+                            .item {
+                                margin-bottom: 0.5em;
+                            }
+                        }
+                    }
+                }
+                .bank-addr {
+                    display: flex;
+                    margin-bottom: 2em;
+                    .bank {
+                        flex: 1;
+                        b {
+                            color: #4183C4;
+                        }
+                        .info {
+                            display: flex;
+                            padding-right: 30%;
+                            margin-bottom: 1em;
+                            .keys {
+                                flex: 1; 
+                                margin-right: 1em;
+                                font-weight: bold;
+                                .item {
+                                    margin-bottom: 0.5em;
+                                }
+                            }
+                            .values {
+                                flex: 1;
+                                .item {
+                                    margin-bottom: 0.5em;
+                                }
+                            }
+                        }
+                        span {
+                            margin-right: 2em;
+                            color: #4183C4;
+                            font-size: 1.25em;
+                            cursor: pointer;
+                            &:hover, &:active {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .addr {
+                        flex: 1;
+                        b {
+                            color: #4183C4;
+                        }
+                        p {
+                            margin: 0 0 0.3em 0;
+                        }
+                    }
+                }
+                .links {
+                    span {
+                        color: #4183C4;
+                        margin-right: 1.5em;
+                        cursor: pointer;
+                        &:hover, &:active {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .rm-doc {
+                font-size: 1.3em;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                color: #DB3737;
+                background: none;
+                cursor: pointer;
+            }
+        }
+    }
+    .edit-object {
+        margin-top: 4em;
+        min-height: 25em;
+        border: 1px solid #D8E1E8;
+        .btns {
+            .back-btn {
+                background: #F55656;
+                border: none;
+                padding: 1.1em;
+                color: #fff;
+                border-radius: 0.5em;
+            }
+            .save-btn {
+                float: right;
+                background: #14CCBD;
+                color: #fff;
+                padding: 1.2em;
+                border: none;
+                border-radius: 0.5em;
+            }
+        }
+        .form {
+            padding: 3em;
+            .row {
+                margin-bottom: 0.5em;
+                span {
+                    margin-right: 1em;
+                }
+                input {
+                    // padding: 0.3em;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid rgb(228, 203, 178);
+                    color: #DB3737;
+                    &:focus {
+                        border-bottom: 2px solid #F55656;
+                    }
+                }
+            }
+        }
+    }
+}

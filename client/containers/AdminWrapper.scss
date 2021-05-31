@@ -1,0 +1,12 @@
+.AdminWrapper{
+  display: grid;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  grid-template-columns: 256px auto;
+  grid-template-rows: auto;
+  background-color: #fff;
+  padding: 10px;
+  .sidebar{
+    border: 1px solid #f2f2f2;
+  }
+}

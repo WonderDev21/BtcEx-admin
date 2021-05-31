@@ -1,0 +1,52 @@
+.sendCurrency-wrapper {
+  display: inline;
+  cursor: pointer;
+    .form {
+      margin: 3em;
+      color: #000;
+      .data-row {
+        display: flex;
+        flex-direction: column;
+        .input-container {
+          display: flex;
+          // flex-direction: column;
+          margin-bottom: 2.5em;
+          span {
+            color: #20222D;
+            // margin-bottom: 0.15em;
+            width: 20%;
+            font-weight: 600;
+          }
+          input {
+            outline: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid rgba(0,0,0,0.15);
+            height: 1.5em;
+            width: 100%;
+            margin-left: 1em;
+            &:focus {
+                border-bottom: 2px solid #20222D;
+              }
+          }
+          select {
+            margin-left: 1em;
+          }
+        }
+        .next-btn {  // form 1
+            margin-top: 1em;
+            padding: 0.5em;
+            border-radius: 0.2em;
+            border: none;
+            background: #20222D;
+            color: #fff;
+            width: 20%;
+            align-self: flex-end;
+            &:hover, &:focus, &:active {
+              opacity: 0.8;
+            }
+          }
+      }
+    }
+ }
